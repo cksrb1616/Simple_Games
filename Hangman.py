@@ -1,6 +1,13 @@
+# pip install random-word
+
+from random_word import RandomWords
 from random import *
-words = ["apple", "banana", "orange"]
-word = choice(words)
+
+words = RandomWords()
+word = words.get_random_word()
+# r = RandomWords()
+# r.get_random_words() : in list
+# r.word_of_the_day() : Return Word of the day
 print("answer: "+ word)
 letters = ""
 
